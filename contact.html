@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>- Mockup JS Project - </title>
+
+    <!-- CSS-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" id="theme" href="css/green.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+
+    <link rel="stylesheet" href="js/jquery-ui-1.13.2/jquery-ui.min.css" />
+    <link rel="stylesheet" href="js/jquery-ui-1.13.2/jquery-ui.structure.min.css" />
+    <link rel="stylesheet" href="js/jquery-ui-1.13.2/jquery-ui.theme.min.css" />
+
+    <script type="text/javascript" src="js/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <div id="selector-theme">
+        <div id="to-green"></div>
+        <div id="to-red"></div>
+        <div id="to-blue"></div>
+    </div>
+
+    <section id="global">
+        <header>
+            <div id="logo">
+                <h1> JS PROJECT</h1>
+            </div>
+
+            <div class="clearfix"></div>
+            <nav id="menu">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="clock.html">
+                            Time
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Get in touch
+                        </a>
+                    </li>
+
+                </ul>
+            </nav> <!-- NAV END-->
+        </header> <!--HEADER END-->
+
+
+        <!-- accordion-->
+        <section id="content">
+            <div id="box">
+                <h2>Contact</h2>
+                <form action="" method="post" id="form_contact">
+                    <label for="name">First Name</label>
+                    <input type="text" name="name" data-validation="alphanumeric">
+
+                    <label for="surname">Last Name</label>
+                    <input type="text" name="surname" data-validation="alphanumeric">
+
+                    <label for="email">E-mail</label>
+                    <input type="text" name="email" data-validation="email">
+
+                    <label for="sex">Sex</label>
+                    <select name="sex" id="" data-validation="required">
+                        <option value="men">Man</option>
+                        <option value="woman">Woman</option>
+                    </select>
+                    <label for="date">Birthday</label>
+                    <input type="text" name="date" data-validation="date" data-validation-format="mm-dd-yyyy" id="date"
+
+                    <label for="years">Years</label>
+                    <input type="number" name="years" data-validation="number">
+                    <input type="submit" value="send">
+                </form>
+
+            </div>
+
+
+
+            <aside id="sidebar">
+                <div id="about"> <!--about-->
+                    <h4>
+                        About me!
+                    </h4>
+                    <img src="img/caracol.jpg" alt="The caracol?!">
+                    <p>
+                        Curabitur vitae justo posuere, auctor nulla et, dignissim mauris. Suspendisse purus mi,
+                        tristique sit amet sagittis eu, tempus id mi. Aliquam tristique lorem eget commodo eleifend.
+                        Cras lacinia, magna sed aliquet bibendum, ipsum lorem commodo ante, nec eleifend odio erat ut
+                        diam.
+                    </p>
+                </div> <!--end about-->
+
+                <div id="login"> <!--login-->
+                    <h4>Login</h4>
+                    <form action="">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="form_name" />
+
+                        <label for="email">Email</label>
+                        <input type="text" name="email" />
+
+                        <label for="password">Password</label>
+                        <input type="text" name="password" />
+
+                        <input type="submit" id="submit" value="Login">
+                    </form>
+                </div> <!--end login-->
+            </aside>
+            <div class="clearfix"></div>
+        </section> <!-- end Content-->
+
+    </section> <!--GLOBAL SECTION END-->
+    <footer id="footer">
+        JS Mockup Project - nagb.tech &copy;
+        <a href="#" class="up">up</a>
+    </footer>
+</body>
+
+</html>
